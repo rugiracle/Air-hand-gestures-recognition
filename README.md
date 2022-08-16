@@ -10,16 +10,16 @@ A successful hand gesture recognition system  requires:
 We will be using mediapipe  https://google.github.io/mediapipe/solutions/hands.html 
 to detect and track the hand on a webcam. Mediapipe hand  detector provides us with information of 21 hand landmarks. 
 <br>To mark a start of a gesture one opens his hand palm and closes it to mark an end of a gesture one can close the hand<br>
-Bellow are samples of air handwritten gestures(hand trajectories)
+Bellow are samples of air handwritten gestures(hand trajectories)<br>
 ![alt=air handwritten digits ](./model/AirGesturesSpotted.png "Air handwritten digits")
-Although the above gestures are spotted, they still have  noises mostly at their beginnings and ends.
-<br> Dropping a few points[one can try a number that works for one's gesturing style ] at the beginning and end, generates neater gestures, as showen in bellow picture
+<br>Although the above gestures are spotted, they still have  noises mostly at their beginnings and ends.
+<br> Dropping a few points[one can try a number that works for one's gesturing style ] at the beginning and end, generates neater gestures, as showen in bellow picture<br>
 ![alt=air handwritten digits ](./model/AirGestures_preprocessedSample.png "Pre-processed Air handwritten digits")
-Now that we have digits, we can try to recognize them. 
+<br>Now that we have digits, we can try to recognize them. 
 ## Air handwritten digit recognition: Transfer learning
 
 As it is time consuming to record enough samples from various people to capture gesture variations, 
-lets first consider transfer learning and utilized a model trained on MNIST digit dataset.
+lets first consider transfer learning and utilized a model trained on MNIST digit dataset.<br>
 ![](./model/Mnist_handwritten_digits.png "handwritten digits")
 
 Use a model trained on MNIST digit dataset to recognize handwritten digits in the air
